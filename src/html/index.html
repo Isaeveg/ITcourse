@@ -19,18 +19,21 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body>
+  <body id="body">
     <div class="wrapper">
-      @@include('blocks/header.html')
-      @@include('section/section-main.html')
-      @@include('section/section-course.html')
-      @@include('blocks/footer.html')
+      @@include('blocks/header.html') @@include('section/section-main.html')
+      @@include('section/section-course.html') @@include('blocks/footer.html')
     </div>
     <script src="./js/index.bundle.js"></script>
     <script>
       function navToggle() {
         document.getElementById("headerUl").classList.toggle("_active");
         document.getElementById("headerBackdrop").classList.toggle("_active");
+        if (headerBackdrop.classList.contains("_active")) {
+          body.style.overflow = "hidden";
+        } else {
+          body.style.overflow = "auto"; 
+        }
       }
     </script>
   </body>

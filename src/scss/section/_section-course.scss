@@ -4,12 +4,39 @@
   padding-top: 70px;
   padding-right: 155px;
   background-color: var(--c-bg-white);
+
+
+  @include desktop-small {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @include tablet {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+  }
   &__info {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 70px;
     padding-bottom: 60px;
+
+    @include tablet {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @include mobile {
+        gap: 30px;
+      }
   }
 
   &__title {
@@ -20,6 +47,11 @@
     line-height: 72px;
     letter-spacing: 0.169px;
     word-break: break-word;
+
+    @include mobile {
+        font-size: 36px;
+        order: 1;
+      }
   }
 
   &__desc {
@@ -31,16 +63,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+        font-size: 18px;
+      }
   }
 
   &__types {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
+
+    @include desktop-small {
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    }
   }
 
-  &__item {
-  }
 }
 .item {
   display: grid;
@@ -49,6 +87,10 @@
   padding: 25px 35px;
   transition: var(--transition);
   box-shadow: 0 19px 38px rgba(#000, 0.3), 0 15px 12px rgba(#000, 0.2);
+
+  @include mobile {
+    padding: 20px 20px;
+  }
   &:hover {
     -webkit-transform: scale(1.065);
     -ms-transform: scale(1.065);
@@ -65,11 +107,14 @@
   &__title {
     color: var(--c-black);
     font-family: var(--ff-pop);
-    font-size: 26px;
+    font-size: 23px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0.169px;
     word-break: break-word;
+    @include mobile {
+        font-size: 19px;
+      }
   }
 
   &__desc {
@@ -81,12 +126,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+        font-size: 16px;
+      }
   }
 }
-.material-icons {
+
+.icon-menu-book {
   padding: 20px;
   border-radius: 50%;
   background-color: var(--c-bg-white);
-}
-.icon-menu-book {
+  user-select: none;
 }
