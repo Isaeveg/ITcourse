@@ -4,11 +4,17 @@ $tablet: 992px;
 $tablet-small: 768px;
 $mobile: 576px;
 
-:root {
-	--ff: 'Poppins', sans-serif;
-	--transition: .2s all ease-in-out;
+//font-family: 'Inter', sans-serif;
+//font-family: 'Poppins', sans-serif;
 
-	--c-primary: #0b8fed;
-	--c-text-white: #fff;
-	--c-border: #eee;
+:root {
+  --ff-pop: "Poppins", sans-serif;
+  --ff-int: "Inter", sans-serif;
+  --transition: 0.2s all ease-in-out;
+  --c-bg-main: #1d212f;
+  --c-primary: #f58634;
+  --c-text-white: #fff;
+  --c-border: #eee;
+  --c-black: #000;
+  --c-desc: #1b1d21;
 }
