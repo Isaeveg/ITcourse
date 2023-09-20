@@ -19,26 +19,53 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-
   <body>
-    <header class="header">
-	<div class="header__logo">Start</div>
-	<div class="header__nav">
-		<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
-		<ul class="header__ul" id="headerUl">
-			<li class="header__li"><a class="header__a" href="/">Link 1</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 2</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 3</a></li>
-			<li class="header__li"><a class="header__a" href="/">Link 4</a></li>
-			<span class="material-icons icon-close" onclick="navToggle()">close</span>
-		</ul>
-		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
-	</div>
+    <div class="wrapper">
+      <header class="header container">
+  <div class="header__logo logo">
+    <a class="header__logo-a" href="/">Educationpower</a>
+  </div>
+  <div class="header__nav">
+    <div
+      class="header__backdrop"
+      id="headerBackdrop"
+      onclick="navToggle()"
+    ></div>
+    <ul class="header__ul" id="headerUl">
+      <li class="header__li"><a class="header__a" href="/">Home</a></li>
+      <li class="header__li"><a class="header__a" href="/">Featured</a></li>
+      <li class="header__li"><a class="header__a" href="/">How It Works</a></li>
+      <li class="header__li"><a class="header__a" href="/">Testimonial</a></li>
+      <li class="header__li"><a class="header__a" href="/">Blog</a></li>
+      <li class="header__li"><a class="header__a" href="/">Subscribe</a></li>
+      <span class="material-icons icon-close" onclick="navToggle()">close</span>
+    </ul>
+    <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+  </div>
 </header>
- <footer class="footer">
+
+      <section class="section-main container">
+  <div  class="section-main__foto">
+    <img src="../../img/mainbg.png" alt="mainbg" />
+  </div>
+  <div class="section-main__info">
+    <div class="section-main__title">
+      Learn Everyday & Any New Skills Online with Top Instructors.
+    </div>
+    <div class="section-main__desc">
+      We are proudly to provide you Educationpower quality education on your
+      hand
+    </div>
+    <div class="section-main__btn btn">
+      <button class="btn__primary">try now</button>
+    </div>
+  </div>
+</section>
+<footer class="footer container">
 	<div>Footer</div>
 </footer>
 
+    </div>
     <script src="./js/index.bundle.js"></script>
     <script>
       function navToggle() {

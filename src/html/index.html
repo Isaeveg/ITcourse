@@ -19,9 +19,11 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-
   <body>
-    @@include('blocks/header.html') @@include('blocks/footer.html')
+    <div class="wrapper">
+      @@include('blocks/header.html')
+      @@include('section/section-main.html')@@include('blocks/footer.html')
+    </div>
     <script src="./js/index.bundle.js"></script>
     <script>
       function navToggle() {

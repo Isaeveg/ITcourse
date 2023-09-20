@@ -1,15 +1,21 @@
-html, body {
-	height: 100%;
+html,
+body {
+  height: 100%;
 }
 body {
-	font-family: var(--ff-pop);
-	display: grid;
-	grid-template-rows: auto 1fr auto;
+  font-family: var(--ff-pop);
 }
 .container {
-	max-width: 1100px;
-	margin-inline: auto;
+  width: 100%;
+  max-width: calc(1440px + 40px);
+  margin-inline: auto;
+  padding: 20px;
+}
+.wrapper {
+  max-width: 1920px;
+  margin-inline: auto;
+  overflow: hidden;
 }
 .main {
-	padding: 20px;
+  padding: 20px;
 }
