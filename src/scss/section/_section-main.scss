@@ -60,9 +60,11 @@
       transition: var(--transition);
 
       &:hover {
-        border: 2px solid var(--c-primary);
-        background: transparent;
+        background: var(--c-hover);
         color: var(--c-white);
+        -webkit-transform: scale(1.065);
+        -ms-transform: scale(1.065);
+        transform: scale(1.065);
       }
     }
   }
