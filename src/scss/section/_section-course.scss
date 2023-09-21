@@ -5,7 +5,6 @@
   padding-right: 155px;
   background-color: var(--c-bg-white);
 
-
   @include desktop-small {
     padding-left: 100px;
     padding-right: 100px;
@@ -29,14 +28,14 @@
     padding-bottom: 60px;
 
     @include tablet {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-      }
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
 
-      @include mobile {
-        gap: 30px;
-      }
+    @include mobile {
+      gap: 30px;
+    }
   }
 
   &__title {
@@ -49,9 +48,9 @@
     word-break: break-word;
 
     @include mobile {
-        font-size: 36px;
-        order: 1;
-      }
+      font-size: 36px;
+      order: 1;
+    }
   }
 
   &__desc {
@@ -65,8 +64,8 @@
     justify-content: center;
 
     @include mobile {
-        font-size: 18px;
-      }
+      font-size: 18px;
+    }
   }
 
   &__types {
@@ -78,7 +77,6 @@
       grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     }
   }
-
 }
 .item {
   display: grid;
@@ -113,8 +111,8 @@
     letter-spacing: 0.169px;
     word-break: break-word;
     @include mobile {
-        font-size: 19px;
-      }
+      font-size: 19px;
+    }
   }
 
   &__desc {
@@ -128,12 +126,52 @@
     justify-content: center;
 
     @include mobile {
-        font-size: 16px;
-      }
+      font-size: 16px;
+    }
   }
 }
 
 .icon-menu-book {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--c-bg-white);
+  user-select: none;
+}
+.icon-star {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--c-bg-white);
+  user-select: none;
+}
+.icon-library_books {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--c-bg-white);
+  user-select: none;
+}
+
+.icon-lauto_stories {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--c-bg-white);
+  user-select: none;
+}
+
+.icon-bookmarks {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--c-bg-white);
+  user-select: none;
+}
+
+.icon-auto_stories {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--c-bg-white);
+  user-select: none;
+}
+
+.icon-collections_bookmark {
   padding: 20px;
   border-radius: 50%;
   background-color: var(--c-bg-white);
