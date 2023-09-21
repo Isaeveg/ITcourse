@@ -1,13 +1,18 @@
 .section-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 137px;
   margin-bottom: 100px;
   display: flex;
   background-color: var(--c-bg-main);
   border-radius: 10px;
+  gap: 50px;
 
   @include desktop-small {
     padding-left: 100px;
     padding-right: 100px;
+    flex-direction: column-reverse;
   }
 
   @include tablet {
@@ -24,9 +29,19 @@
   img {
     object-fit: cover;
     border-radius: 12px;
+    margin: 35px 0 35px 0;
+
+    @include mobile-small {
+      object-fit: unset;
+    }
   }
 
   &__info {
+    @include desktop-small {
+      display: grid;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
   }
 
   &__title {
@@ -36,6 +51,17 @@
     font-weight: 600;
     line-height: 52px;
     letter-spacing: 0.2px;
+    word-wrap: break-word;
+    margin-bottom: 33px;
+    @include desktop-small {
+      font-size: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include mobile-small {
+      font-size: 28px;
+    }
   }
 
   &__desc {
@@ -44,9 +70,25 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 36px;
+    word-wrap: break-word;
+    margin-bottom: 60px;
+
+    @include desktop-small {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+    }
   }
 
   &__cont {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include desktop-small {
+      justify-content: center;
+    }
   }
 
   &__btn {
@@ -57,12 +99,23 @@
     border: 2px solid transparent;
     transition: var(--transition);
 
+    &:hover {
+      background: var(--c-hover);
+      color: var(--c-white);
+      -webkit-transform: scale(1.065);
+      -ms-transform: scale(1.065);
+      transform: scale(1.065);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
     a {
       color: var(--c-white);
       text-align: center;
       font-family: var(--ff-int);
       font-size: 18px;
       font-weight: 500;
+      @include desktop-small {
+        font-size: 16px;
+      }
     }
   }
 
@@ -74,12 +127,23 @@
     border: 2px solid var(--c-white);
     transition: var(--transition);
 
+    &:hover {
+      background: var(--c-hover);
+      color: var(--c-white);
+      -webkit-transform: scale(1.065);
+      -ms-transform: scale(1.065);
+      transform: scale(1.065);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
     a {
       color: var(--c-white);
       text-align: center;
       font-family: var(--ff-int);
       font-size: 18px;
       font-weight: 500;
+      @include desktop-small {
+        font-size: 16px;
+      }
     }
   }
 }
