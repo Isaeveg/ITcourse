@@ -1,0 +1,47 @@
+.section-about {
+  margin-top: 137px;
+  margin-bottom: 100px;
+  display: flex;
+  background-color: var(--c-bg-main);
+  margin-right: 155px;
+  margin-left: 155px;
+  border-radius: 10px;
+
+  @include desktop-small {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @include tablet {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+  }
+
+  img{
+    object-fit: cover;
+  }
+
+  &__info {
+  }
+
+  &__title {
+  }
+
+  &__desc {
+  }
+
+  &__cont {
+  }
+
+  &__button {
+  }
+
+  &__a {
+  }
+}

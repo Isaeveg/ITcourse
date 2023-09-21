@@ -1,9 +1,9 @@
 .section-course {
-  padding-left: 155px;
   padding-bottom: 180px;
   padding-top: 70px;
-  padding-right: 155px;
   background-color: var(--c-bg-white);
+  padding-right: 155px;
+  padding-left: 155px;
 
   @include desktop-small {
     padding-left: 100px;

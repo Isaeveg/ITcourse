@@ -34,8 +34,8 @@
     <ul class="header__ul" id="headerUl">
       <li class="header__li"><a class="header__a" href="#main">Home</a></li>
       <li class="header__li"><a class="header__a" href="#course">Benefits</a></li>
-      <li class="header__li"><a class="header__a" href="/">How It Works</a></li>
-      <li class="header__li"><a class="header__a" href="/">Testimonial</a></li>
+      <li class="header__li"><a class="header__a" href="#price">Our courses</a></li>
+      <li class="header__li"><a class="header__a" href="#about">About us</a></li>
       <li class="header__li"><a class="header__a" href="/">Blog</a></li>
       <li class="header__li"><a class="header__a" href="/">Subscribe</a></li>
       <span class="material-icons icon-close" onclick="navToggle()">close</span>
@@ -134,7 +134,27 @@
     </div>
   </div>
 </section>
-  <section class="section-price container">
+
+      <section class="section-about" id="about">
+  <div class="section-about__info">
+    <h2 class="section-about__title">Get More Info About us</h2>
+    <p class="section-about__desc">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum.
+    </p>
+    <div class="section-about__cont">
+      <button class="section-about__button">
+        <a href="/" class="section-about__a">Book Now</a>
+      </button>
+      <button class="section-about__button">
+        <a href="/" class="section-about__a">Contact Us</a>
+      </button>
+    </div>
+  </div>
+  <img width="541px" height="378px" src="../../img/aboutbg.jpg" alt="aboutbg" />
+</section>
+
+      <section class="section-price container" id="price">
   <div class="section-price__info">
     <h1 class="section-price__title">Our most popular courses</h1>
     <p class="section-price__desc">
@@ -144,13 +164,33 @@
   </div>
   <div class="section-price__case">
     <div class="section-price__card card">
-      <img src="../../img/cardbg.jpg" alt="bg" />
+      <img width="383px" height="256px" src="../../img/cardbg.jpg" alt="bg" />
       <div class="card__info">
         <div class="card__header">
-          <div class="card__title">$60.00</div>
+          <h4 class="card__title">$60.00</h4>
           <span class="card__span"><s>$98.00</s></span>
         </div>
-        <div class="card__desc">English Speaking with conversation british</div>
+        <p class="card__desc">English Speaking with conversation british</p>
+        <div class="card__footer">
+          <div class="card__star">
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+          </div>
+          <span class="card__reviews">4,5 k Reviews</span>
+        </div>
+      </div>
+    </div>
+    <div class="section-price__card card">
+      <img width="383px" height="256px" src="../../img/cardbg.jpg" alt="bg" />
+      <div class="card__info">
+        <div class="card__header">
+          <h4 class="card__title">$60.00</h4>
+          <span class="card__span"><s>$98.00</s></span>
+        </div>
+        <p class="card__desc">Algorima Math aljabar, geometri aritmatika</p>
         <div class="card__footer">
           <div class="card__star">
             <span class="material-icons icon-grade"> grade </span>
@@ -165,13 +205,13 @@
       </div>
     </div>
     <div class="section-price__card card">
-      <img src="../../img/cardbg.jpg" alt="bg" />
+      <img width="383px" height="256px" src="../../img/cardbg.jpg" alt="bg" />
       <div class="card__info">
         <div class="card__header">
-          <div class="card__title">$60.00</div>
+          <h4 class="card__title">$60.00</h4>
           <span class="card__span"><s>$98.00</s></span>
         </div>
-        <div class="card__desc">Algorima Math aljabar, geometri aritmatika</div>
+        <p class="card__desc">Child's Sensory and Motor Development</p>
         <div class="card__footer">
           <div class="card__star">
             <span class="material-icons icon-grade"> grade </span>
@@ -186,13 +226,13 @@
       </div>
     </div>
     <div class="section-price__card card">
-      <img src="../../img/cardbg.jpg" alt="bg" />
+      <img width="383px" height="256px" src="../../img/cardbg.jpg" alt="bg" />
       <div class="card__info">
         <div class="card__header">
-          <div class="card__title">$60.00</div>
+          <h4 class="card__title">$60.00</h4>
           <span class="card__span"><s>$98.00</s></span>
         </div>
-        <div class="card__desc">Child's Sensory and Motor Development</div>
+        <p class="card__desc">iOS & Swift - The Complete iOS App Development</p>
         <div class="card__footer">
           <div class="card__star">
             <span class="material-icons icon-grade"> grade </span>
@@ -207,15 +247,13 @@
       </div>
     </div>
     <div class="section-price__card card">
-      <img src="../../img/cardbg.jpg" alt="bg" />
+      <img width="383px" height="256px" src="../../img/cardbg.jpg" alt="bg" />
       <div class="card__info">
         <div class="card__header">
-          <div class="card__title">$60.00</div>
+          <h4 class="card__title">$60.00</h4>
           <span class="card__span"><s>$98.00</s></span>
         </div>
-        <div class="card__desc">
-          iOS & Swift - The Complete iOS App Development
-        </div>
+        <p class="card__desc">The Complete 2020 Web Development Bootcamp</p>
         <div class="card__footer">
           <div class="card__star">
             <span class="material-icons icon-grade"> grade </span>
@@ -230,36 +268,57 @@
       </div>
     </div>
     <div class="section-price__card card">
-      <img src="../../img/cardbg.jpg" alt="bg" />
+      <img width="383px" height="256px" src="../../img/cardbg.jpg" alt="bg" />
       <div class="card__info">
         <div class="card__header">
-          <div class="card__title">$60.00</div>
+          <h4 class="card__title">$60.00</h4>
           <span class="card__span"><s>$98.00</s></span>
         </div>
-        <div class="card__desc">The Complete 2020 Web Development Bootcamp</div>
-        <div class="card__footer">
-          <div class="card__star">
-            <span class="material-icons icon-grade"> grade </span>
-            <span class="material-icons icon-grade"> grade </span>
-            <span class="material-icons icon-grade"> grade </span>
-            <span class="material-icons icon-grade"> grade </span>
-            <span class="material-icons icon-grade"> grade </span>
-            <span class="material-icons icon-grade"> grade </span>
-          </div>
-          <span class="card__reviews">4,5 k Reviews</span>
-        </div>
-      </div>
-    </div>
-    <div class="section-price__card card">
-      <img src="../../img/cardbg.jpg" alt="bg" />
-      <div class="card__info">
-        <div class="card__header">
-          <div class="card__title">$60.00</div>
-          <span class="card__span"><s>$98.00</s></span>
-        </div>
-        <div class="card__desc">
+        <p class="card__desc">
           Master Business Class English for your business
+        </p>
+        <div class="card__footer">
+          <div class="card__star">
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+          </div>
+          <span class="card__reviews">4,5 k Reviews</span>
         </div>
+      </div>
+    </div>
+    <div class="section-price__card card">
+      <img width="383px" height="256px" src="../../img/cardbg.jpg" alt="bg" />
+      <div class="card__info">
+        <div class="card__header">
+          <h4 class="card__title">$60.00</h4>
+          <span class="card__span"><s>$98.00</s></span>
+        </div>
+        <p class="card__desc">Algorima Math aljabar, geometri aritmatika</p>
+        <div class="card__footer">
+          <div class="card__star">
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+            <span class="material-icons icon-grade"> grade </span>
+          </div>
+          <span class="card__reviews">4,5 k Reviews</span>
+        </div>
+      </div>
+    </div>
+    <div class="section-price__card card">
+      <img width="383px" height="256px" src="../../img/cardbg.jpg" alt="bg" />
+      <div class="card__info">
+        <div class="card__header">
+          <h4 class="card__title">$60.00</h4>
+          <span class="card__span"><s>$98.00</s></span>
+        </div>
+        <p class="card__desc">iOS & Swift - The Complete iOS App Development</p>
         <div class="card__footer">
           <div class="card__star">
             <span class="material-icons icon-grade"> grade </span>
@@ -286,17 +345,29 @@
     <ul class="footer__ul">
       <li class="footer__li">
         <a href="/" class="footer__a"
-          ><img src="../../img/socials/telegram.svg" alt="telegram"
+          ><img
+            width="30px"
+            height="30px"
+            src="../../img/socials/telegram.svg"
+            alt="telegram"
         /></a>
       </li>
       <li class="footer__li">
         <a href="/" class="footer__a"
-          ><img src="../../img/socials/ln.svg" alt="link"
+          ><img
+            width="30px"
+            height="30px"
+            src="../../img/socials/ln.svg"
+            alt="link"
         /></a>
       </li>
       <li class="footer__li">
         <a href="/" class="footer__a"
-          ><img src="../../img/socials/git.svg" alt="github"
+          ><img
+            width="30px"
+            height="30px"
+            src="../../img/socials/git.svg"
+            alt="github"
         /></a>
       </li>
     </ul>
@@ -387,7 +458,7 @@
         if (headerBackdrop.classList.contains("_active")) {
           body.style.overflow = "hidden";
         } else {
-          body.style.overflow = "auto"; 
+          body.style.overflow = "auto";
         }
       }
     </script>

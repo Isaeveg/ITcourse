@@ -83,6 +83,7 @@
     font-weight: 400;
     line-height: 28px;
     transition: var(--transition);
+    text-transform: capitalize;
 
     &:hover {
       color: var(--c-primary);

@@ -2,6 +2,23 @@
   padding-top: 70px;
   padding-right: 150px;
   padding-left: 150px;
+  padding-bottom: 100px;
+
+  @include desktop-small {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  @include tablet {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @include mobile {
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+
   &__info {
     display: grid;
     gap: 16px;
@@ -33,12 +50,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   }
 }
 .card {
   border-radius: 12px;
   background: var(--c-card);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+
+  &:hover {
+    -webkit-transform: scale(1.065);
+    -ms-transform: scale(1.065);
+    transform: scale(1.065);
+  }
 
   img {
     width: 100%;
@@ -60,14 +85,24 @@
     font-weight: 600;
     line-height: 25px;
     margin-bottom: 13px;
+    word-wrap: break-word;
+
+    @include mobile {
+        font-size: 36px;
+      }
   }
 
   &__span {
+    display: flex;
     color: var(--c-card-span);
     font-family: var(--ff-int);
     font-size: 14px;
     font-weight: 400;
     line-height: 25px;
+
+    s {
+      transform: translateY(-5px);
+    }
   }
 
   &__desc {
@@ -77,6 +112,11 @@
     font-weight: 600;
     line-height: 28px;
     margin-bottom: 22px;
+    word-wrap: break-word;
+
+    @include mobile {
+        font-size: 18px;
+      }
   }
 
   &__footer {
@@ -97,4 +137,5 @@
 }
 .icon-grade {
   color: rgb(204, 179, 69);
+  user-select: none;
 }
