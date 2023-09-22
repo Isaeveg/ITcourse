@@ -1,25 +1,28 @@
 // vendors
-@import 'vendors/reset';
+@import "vendors/reset";
 
 // utils
-@import 'utils/vars';
-@import 'utils/mixins';
+@import "utils/vars";
+@import "utils/mixins";
 
 // layout
-@import 'layout/base';
-@import 'layout/scroll';
-@import 'layout/grid';
+@import "layout/base";
+@import "layout/scroll";
+@import "layout/grid";
 
 // components
-@import 'components/header';
-@import 'components/footer';
-
+@import "components/header";
+@import "components/footer";
 
 //section
-@import 'section/section-main';
-@import 'section/section-course';
-@import 'section/section-price';
-@import 'section/section-about';
+@import "section/section-main";
+@import "section/section-course";
+@import "section/section-price";
+@import "section/section-about";
+@import "section/section-com";
 
+//plugins
 
-
+@import "plugins/carousel";
+@import "plugins/owl.carousel";
+@import "plugins/owl.theme.default";
